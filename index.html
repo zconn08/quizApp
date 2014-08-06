@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basketball Trivia</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+	<div id="backgroundWrapper">
+		<div class = "overlay overlayInstructions">
+			<div class="overlayBorder">
+				<div class="overlayText">
+					(1) Basketball Trivia consists of 5 questions
+					<br>
+					<br>
+					(2) Your answers will be tracked in the circles in the bottom left
+					<br>
+					<br>
+					(3) Let's see how big of a hoops fan you really are!
+				</div>
+			</div>
+			<button id="closeButton">Go!</button>
+		</div>
+		<div id="gameArea">
+			<header>
+				Basketball Trivia
+			</header>
+			<div id="questionImage"></div>
+			<div id = "textArea">
+				<div id = "question">
+					Who holds the record for most career 3-pointers?
+				</div>
+				<div id = "answerSection">
+					<form>
+						<input type="radio" name="choice"/><span>Ray Allen</span><br><br>
+						<input type="radio" name="choice"/><span>Reggie Miller</span><br><br>
+						<input type="radio" name="choice"/><span>Peja Stojakovic</span><br><br>
+						<input type="radio" name="choice"/><span>Jason Kidd</span><br><br>
+						<button id ="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div class="questionCircle" id ="c1"></div>
+			<div class="questionCircle" id ="c2"></div>
+			<div class="questionCircle" id ="c3"></div>
+			<div class="questionCircle" id ="c4"></div>
+			<div class="questionCircle" id ="c5"></div>
+			<div id="instructionsButton">Instructions</div>
+		</div>
+		<div class="overlay finalScreen">
+			<div class="overlayBorder">
+				<div class="overlayText">					
+				</div>
+			</div>
+			<button></button>
+		</div>
+	</div>
+</body>
+</html>
