@@ -3,7 +3,7 @@
 	height: 650px;
 	background-image: url(../images/bballcourt.png);
 	background-repeat: no-repeat;
-	font-family: garamond;
+	font-family: Garamond;
 	font-weight: bold;
 }
 
@@ -11,36 +11,41 @@
 	position: relative;
 	width: 700px;
 	height: 480px;
-	background-color: white;
+	background-color: #F1F7F7;
 	left: 290px;
 	top: 50px;
 	border-radius: 10px;
 }
 
 header {
-	padding-top: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	text-align: center;
-	font-size: 36px;
+	font-size: 40px;
+	background-color: #3F807D;
+	border-radius: 10px;
+	color:white;
 }
 
 #questionImage {
 	width: 250px;
 	height: 300px;
-	background-image: url(../images/larryBird.jpg);
 	border-radius: 7px;
 	margin-top: 40px;
 	margin-left: 50px;
 	float: left;
+	border: 3px solid #669A98;
 }
 
 #textArea {
 	width: 300px;
-	height: 294px;
+	height: 300px;
 	float: left;
 	margin-top: 40px;
 	margin-left: 50px;
 	border-radius: 7px;
-	border: 3px dotted black;
+	border: 3px dotted #669A98;
+	color:#0A4C49;
 }
 
 .questionCircle {
@@ -51,29 +56,15 @@ header {
 	left: 45px;
 	border-radius: 100%;
 	margin-left: 5px;
-	border: 2px dotted black;
+	border: 3px solid black;
+	background-color: white;
 }
 
 #c1 {
 	clear: both;
-	float: left;
-	background-color: red;
 }
 
-#c2 {
-	float: left;
-	background-color: green;
-}
-
-#c3 {
-	float: left;
-}
-
-#c4 {
-	float: left;
-}
-
-#c5 {
+#c1, #c2, #c3, #c4, #c5, #c6 {
 	float: left;
 }
 
@@ -84,7 +75,7 @@ header {
 	top: 20px;
 	left: 10px;
 	text-align: center;
-	font-size: 20px;
+	font-size: 18px;
 }
 #answerSection {
 	width: 260px;
@@ -97,8 +88,9 @@ header {
 form {
 	position: relative;
 	left:20px;
-	top:10px;
-	width: 240px;
+	top:14px;
+	width: 30px;
+	float: left;
 }
 form > span {
 	position: relative;
@@ -108,6 +100,7 @@ form > span {
 }
 
 #submit {
+	clear: both;
 	width: 100px;
 	height: 30px;
 	float: right;
@@ -115,14 +108,15 @@ form > span {
 	margin-right: -10px; 
 	border: none;
 	border-radius: 6px;
-	background-color: #BABABA;
+	background-color: #3F807D;
 	text-align: center;
 	font-weight: bold;
 	font-size: 12px;
+	color:white;
 }
 
-#submit:hover {
-	border: 2px solid black;
+#submit:hover, .closeButton:hover {
+	border: 2px solid #0A4C49;
 }
 
 #instructionsButton {
@@ -132,6 +126,7 @@ form > span {
 	width: 100px;
 	margin-right: 45px;
 	margin-top: 20px;
+	color:#0A4C49;
 }
 
 #instructionsButton:hover {
@@ -142,7 +137,7 @@ form > span {
 	position: absolute;
 	width: 700px;
 	height: 400px;
-	background-color: white;
+	background-color: #F1F7F7;
 	left: 290px;
 	top:120px;
 	z-index: 1000;
@@ -154,7 +149,7 @@ form > span {
 	top: 50px;
 	width: 400px;
 	height: 240px;
-	border: 4px dotted blue;
+	border: 4px dotted #0A4C49;
 	border-radius: 6px;
 }
 
@@ -168,15 +163,15 @@ form > span {
 	text-align: center;
 }
 
-#closeButton {
+.closeButton {
 	position: relative;
 	top: 75px;
 	left: 475px;
 	width: 80px;
 	height: 35px;
-	background-color: blue;
-	border: none;
+	background-color: #0A4C49;
 	border-radius: 3px;
+	border: none;
 	color: white;
 	font-size: 18px;
 	font-family: garamond;
@@ -185,4 +180,15 @@ form > span {
 
 .finalScreen {
 	display: none;
+}
+
+ul {
+	float: left;
+	position: relative;
+	left: 15px;
+	top:15px;
+}
+
+#answer2, #answer3, #answer4 {
+	margin-top: 19px;
 }

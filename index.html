@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Basketball Trivia</title>
+	<title>Expert Basketball Trivia</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
@@ -13,7 +13,7 @@
 		<div class = "overlay overlayInstructions">
 			<div class="overlayBorder">
 				<div class="overlayText">
-					(1) Basketball Trivia consists of 5 questions
+					(1) Expert Basketball Trivia consists of 6 questions
 					<br>
 					<br>
 					(2) Your answers will be tracked in the circles in the bottom left
@@ -22,25 +22,33 @@
 					(3) Let's see how big of a hoops fan you really are!
 				</div>
 			</div>
-			<button id="closeButton">Go!</button>
+			<button class="closeButton">Go!</button>
 		</div>
 		<div id="gameArea">
 			<header>
-				Basketball Trivia
+				Expert Basketball Trivia
 			</header>
-			<div id="questionImage"></div>
+			<div id="questionImage">
+				<img src="images/larryBird.jpg">
+			</div>
 			<div id = "textArea">
 				<div id = "question">
 					Who holds the record for most career 3-pointers?
 				</div>
 				<div id = "answerSection">
 					<form>
-						<input type="radio" name="choice"/><span>Ray Allen</span><br><br>
-						<input type="radio" name="choice"/><span>Reggie Miller</span><br><br>
-						<input type="radio" name="choice"/><span>Peja Stojakovic</span><br><br>
-						<input type="radio" name="choice"/><span>Jason Kidd</span><br><br>
-						<button id ="submit">Submit</button>
+						<input type="radio" name="choice" class="choice" value="1"/><br><br>
+						<input type="radio" name="choice" class="choice" value="2"/><br><br>
+						<input type="radio" name="choice" class="choice" value="3"/><br><br>
+						<input type="radio" name="choice" class="choice" value="4"/><br><br>
 					</form>
+					<ul class="answerChoices">
+						<li id = "answer1">Ray Allen</li>
+						<li id = "answer2">Reggie Miller</li>
+						<li id = "answer3">Peja Stojakovic</li>
+						<li id = "answer4">Jason Kidd</li>
+					</ul>
+					<button id ="submit" name="submit">Submit</button>
 				</div>
 			</div>
 			<div class="questionCircle" id ="c1"></div>
@@ -48,14 +56,21 @@
 			<div class="questionCircle" id ="c3"></div>
 			<div class="questionCircle" id ="c4"></div>
 			<div class="questionCircle" id ="c5"></div>
+			<div class="questionCircle" id ="c6"></div>
 			<div id="instructionsButton">Instructions</div>
 		</div>
 		<div class="overlay finalScreen">
 			<div class="overlayBorder">
-				<div class="overlayText">					
+				<div class="overlayText">
+				<br>
+				<br>
+				You answered <span id ="textCorrect"></span> out of 6 right!
+				<br>
+				<br>
+				Play again?			
 				</div>
 			</div>
-			<button></button>
+			<button class="closeButton" id="restart">Restart!</button>
 		</div>
 	</div>
 </body>
