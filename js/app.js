@@ -82,8 +82,10 @@ $(document).ready(function(){
 		questionNumber=0;
 		numCorrect=0;
 		showRelevant();
-		$(".finalScreen").fadeOut(500);
-		$(".overlayInstructions").fadeIn(100);
+		$(".finalScreen").fadeOut(200);
+		$(".overlayInstructions").fadeIn(200);
+		$("#textCorrect").empty();
+		$("#level").empty();
 		$("#c1,#c2,#c3,#c4,#c5,#c6").css("background-color","white");
 	});
 });
